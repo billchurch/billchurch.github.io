@@ -77,6 +77,16 @@ export const githubProjects: Project[] = [
     languageColor: '#cb171e',
     url: 'https://github.com/billchurch/ha-blueprints',
     topics: ['home-assistant', 'automation', 'smart-home']
+  },
+  {
+    id: 'pica',
+    name: 'PiCA',
+    description: 'Raspberry Pi Certificate Authority - A comprehensive CA management system with YubiKey integration for secure key storage',
+    language: 'Go',
+    languageColor: '#00ADD8',
+    stars: 1,
+    url: 'https://github.com/billchurch/PiCA',
+    topics: ['certificate-authority', 'security', 'yubikey', 'raspberry-pi', 'pki']
   }
 ];
 

@@ -15,7 +15,7 @@ export async function fetchPinnedRepos(): Promise<Project[]> {
 
     const repos: GitHubRepo[] = await response.json();
     
-    const pinnedRepoNames = ['webssh2', 'bhyve-mqtt', 'ssh_test', 'jsmasker', 'dolos', 'ha-blueprints'];
+    const pinnedRepoNames = ['webssh2', 'bhyve-mqtt', 'ssh_test', 'jsmasker', 'dolos', 'ha-blueprints', 'PiCA'];
     
     const pinnedRepos = repos
       .filter(repo => pinnedRepoNames.includes(repo.name))

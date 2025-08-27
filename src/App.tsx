@@ -3,9 +3,11 @@ import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import FeaturedProject from './components/FeaturedProject';
 import ProjectGrid from './components/ProjectGrid';
+import Patents from './components/Patents';
 import Footer from './components/Footer';
 import { altWebtopProject, githubProjects } from './data/projects';
 import { fetchPinnedRepos } from './data/github';
+import { patents } from './data/patents';
 import type { Project } from './types';
 
 const App: Component = () => {
@@ -22,6 +24,7 @@ const App: Component = () => {
       <main class="pt-16">
         <Hero />
         <FeaturedProject project={altWebtopProject} />
+        <Patents patents={patents} />
         <ProjectGrid projects={projects()} />
       </main>
       <Footer />

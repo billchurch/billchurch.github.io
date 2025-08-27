@@ -27,6 +27,18 @@ export interface GitHubRepo {
   topics: string[];
 }
 
+export interface Patent {
+  id: string;
+  number: string;
+  title: string;
+  abstract: string;
+  issuedDate: string;
+  assignee: string;
+  keyFeatures: string[];
+  technicalArea: string;
+  usptoUrl: string;
+}
+
 export interface Theme {
   mode: 'light' | 'dark';
   toggle: () => void;

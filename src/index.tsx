@@ -2,6 +2,12 @@
 import { render } from 'solid-js/web';
 import './styles/index.css';
 import App from './App';
+import { getStoredTheme, getSystemTheme, applyTheme } from './utils/theme';
+
+// Apply theme before rendering to prevent flash
+const storedTheme = getStoredTheme();
+const initialTheme = storedTheme || getSystemTheme();
+applyTheme(initialTheme);
 
 const root = document.getElementById('root');
 
