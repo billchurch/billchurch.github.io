@@ -1,7 +1,6 @@
 .claude/
 CLAUDE.md
 node_modules/
-dist/
 .DS_Store
 *.logus
 .playwright-mcp
